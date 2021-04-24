@@ -1,0 +1,40 @@
+Arguments: 
+  /snap/node/4150/bin/node /home/juliana/node_modules/.bin/yarnpkg config get registry
+
+PATH: 
+  /home/juliana/.npm/_npx/6931/bin:/home/juliana/node_modules/.bin:/home/juliana/.kiex/elixirs/elixir-1.11.4/bin:/home/juliana/.kiex/bin:/home/juliana/erlang/lib/erl_interface-4.0.2/bin:/home/juliana/erlang/bin:/home/juliana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.16.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: ../../package.json: EACCES: permission denied, write
+      at writeSync (fs.js:711:3)
+      at SyncWriteStream._write (internal/fs/sync_write_stream.js:24:3)
+      at writeOrBuffer (internal/streams/writable.js:358:12)
+      at SyncWriteStream.Writable.write (internal/streams/writable.js:303:10)
+      at ConsoleReporter.warn (/home/juliana/node_modules/yarn/lib/cli.js:96352:17)
+      at warn (/home/juliana/node_modules/yarn/lib/cli.js:51521:23)
+      at module.exports.exports.default (/home/juliana/node_modules/yarn/lib/cli.js:37358:7)
+      at /home/juliana/node_modules/yarn/lib/cli.js:51532:51
+      at Generator.next (<anonymous>)
+      at step (/home/juliana/node_modules/yarn/lib/cli.js:310:30)
+
+npm manifest: 
+  {
+    "name": "app",
+    "version": "0.1.0",
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
